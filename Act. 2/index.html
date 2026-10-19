@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
+    <meta name="description" content="Página principal d'una web de pel·lícules.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> First Page</title>
+    <link rel="icon" href="/imgs/aguila-volando.png">
+    <title>Home</title>
 </head>
 <body>
     <header>
@@ -19,8 +21,11 @@
         <section>
             <h1>BUSCAR una pel·lícula</h1>
             <p>Milions de títols, un sol cercador</p>
-            <input type="text" placeholder="Cerca una pel·lícula, per exemple: 'The Legend of Ga'houl'">
-            <button>Cercar</button>
+            <form method="get" action="https://www.themoviedb.org/search">
+                <input type="search" name="query" placeholder="Cerca una pel·lícula, per exemple: 'The Legend of Ga'houl'">
+                <button>Cercar</button>
+            </form>
+            
         </section>
         <section>
             <h2>Resultats</h2>
